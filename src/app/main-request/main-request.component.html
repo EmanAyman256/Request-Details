@@ -1,0 +1,52 @@
+<p-table [value]="requests" [tableStyle]="{'min-width': '60rem','text-align':'center'}">>
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Name</th>
+            <th>Requested By</th>
+            <th>Module</th>
+            <th>Start Date</th>
+            <th>Due Date</th>
+            <th>Duration</th>
+            <th>Assignee</th>
+            <th>Consultants</th>
+            <th>Activity Type</th>
+            <th>Action</th>
+        </tr>
+    </ng-template>
+    <ng-template  pTemplate="body" let-requests > 
+        <tr>
+            <td class="text-center"> 
+                {{requests.name}}
+            </td>
+            <td class="text-center"> 
+                {{requests.requestedBy}}
+            </td>
+            <td class="text-center"> 
+                {{requests.module}}
+            </td>
+            <td class="text-center"> 
+                {{requests.startDate|date}}
+            </td>
+            <td class="text-center"> 
+                {{requests.dueDate|date}}
+            </td>
+            <td class="text-center"> 
+                {{requests.duration}}
+            </td>
+            <td class="text-center"> 
+                {{requests.assignee}}
+            </td>
+            <td class="text-center"> 
+                {{requests.consultants}}
+            </td>
+            <td class="text-center"> 
+                {{requests.activityType}}
+            </td>
+            <td class="text-center">
+                <i class="pi pi-cog" style="font-size: 1rem"></i>
+
+            </td>
+        </tr>
+    </ng-template>
+
+</p-table>
