@@ -19,7 +19,13 @@
                 {{requests.name}}
             </td>
             <td class="text-center"> 
-                {{requests.requestedBy}}
+                <p-avatar 
+                label=" {{requests.requestedBy}}" 
+                styleClass="mr-2" 
+                 size="large"
+                 shape="circle"
+                 [style]="{ 'background-color': '#dee9fc', color: '#1a2551' }" />
+               
             </td>
             <td class="text-center"> 
                 {{requests.module}}
@@ -40,7 +46,8 @@
                 {{requests.consultants}}
             </td>
             <td class="text-center"> 
-                {{requests.activityType}}
+                <p-button label=" {{requests.activityType}}" [outlined]="true" severity="help"/>
+
             </td>
             <td class="text-center">
                 <i class="pi pi-cog" style="font-size: 1rem"></i>

@@ -7,14 +7,17 @@ import { AppComponent } from './app.component';
 import { MainRequestComponent } from './main-request/main-request.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ThemingService, ThemingModule } from '@fundamental-ngx/core/theming';
-import { NavbarComponent } from './navbar/navbar.component';
 import { ShellbarModule } from '@fundamental-ngx/core/shellbar';
+import { AvatarModule } from 'primeng/avatar';
+import { BadgeModule } from 'primeng/badge';
+import { MenubarModule } from 'primeng/menubar';
+import { MenubarComponent } from './menubar/menubar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainRequestComponent,
-    NavbarComponent
+    MenubarComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,10 @@ import { ShellbarModule } from '@fundamental-ngx/core/shellbar';
     ShellbarModule,
     TableModule,
     NoopAnimationsModule,
-    ThemingModule.withConfig({ defaultTheme: 'sap_horizon', changeThemeOnQueryParamChange: false })
+    AvatarModule,
+    BadgeModule,
+    ThemingModule.withConfig({ defaultTheme: 'sap_horizon', changeThemeOnQueryParamChange: false }),
+    MenubarModule
     
   ],
   providers: [],

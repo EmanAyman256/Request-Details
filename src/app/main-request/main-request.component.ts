@@ -8,8 +8,8 @@ import { Request } from '../models/Request.model';
 })
 export class MainRequestComponent {
   requests:Request[]=[{
-    name:"Eman",
-    requestedBy:"Eman Ayman",
+    name:"Eman Ayman",
+    requestedBy:"E.A",
     module:"BTP",
     startDate:new Date(),
     dueDate:new Date(),
@@ -19,14 +19,49 @@ export class MainRequestComponent {
     activityType:"WFH",
   },
 {
-  name:"Eman",
-  requestedBy:"Eman Ayman",
+  name:"A",
+  requestedBy:"A.A",
   module:"BTP",
   startDate:new Date(),
   dueDate:new Date(),
   duration:1,
-  assignee:"Mohamed Youssef",
-  consultants:"Eman",
+  assignee:"M.Y ",
+  consultants:"A",
+  activityType:"WFH",
+
+},
+{
+  name:"M",
+  requestedBy:"M.A",
+  module:"BTP",
+  startDate:new Date(),
+  dueDate:new Date(),
+  duration:1,
+  assignee:"M.Y ",
+  consultants:"M",
+  activityType:"WFH",
+
+},{
+  name:"A",
+  requestedBy:"A.A",
+  module:"BTP",
+  startDate:new Date(),
+  dueDate:new Date(),
+  duration:1,
+  assignee:"M.Y ",
+  consultants:"A",
+  activityType:"WFH",
+
+},
+{
+  name:"A",
+  requestedBy:"A.A",
+  module:"BTP",
+  startDate:new Date(),
+  dueDate:new Date(),
+  duration:1,
+  assignee:"M.Y ",
+  consultants:"A",
   activityType:"WFH",
 
 }]
